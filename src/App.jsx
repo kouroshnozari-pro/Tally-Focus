@@ -118,10 +118,7 @@ export default function App() {
         </button>
       </div>
       <p className="status">{status}</p>
-      <p className="hint">
-        Every {minutes} min of focus = 1 stroke. 4 strokes + 1 crossing line = a
-        bundle of 5.
-      </p>
+
       <div className="sets">
         {Array.from({ length: sets }, (_, s) => {
           const d = Math.min(per, Math.max(0, done - s * per));
